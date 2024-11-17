@@ -4,13 +4,9 @@ namespace HelloWorld
 {
     public class Person
     {
-        public string Name;
-        public Person(string name)
-        {
-        this.Name = name;
-
-            Console.WriteLine("Hello My name is {0}", name);
-        }
+        public string FirstName;
+        public string LastName;
+      
         //public void Introduce(string to)
         //{
         //    Console.WriteLine("Hi {0}, I am {1}", to, Name);
@@ -41,7 +37,12 @@ namespace HelloWorld
             //Console.WriteLine(Pi);
             //person.Introduce("Azlan");
 
-            var person = new Person("John");
+            var person = new Person
+            {
+                FirstName = "Azlan",
+                LastName = "Baig"
+            }; 
+            
 
 
         }
